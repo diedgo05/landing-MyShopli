@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyShopList - Tu Lista de Compras Inteligente</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="header-wrapper">
+      <div class="main-logo">🛒 MyShopList</div>
+      <nav>
+        <ul class="main-menu">
+          <li><a href="#section-2">Acerca</a></li>
+          <li><a href="#section-5">Funciones</a></li>
+          <li><a href="#section-7">Cómo funciona</a></li>
+          <li><a href="#section-9">Tips</a></li>
+          <li><a href="#main-footer">Contacto</a></li>
+          <li><a href="#"><span class="fas fa-shopping-cart"></span></a></li>
+          <li><a href="#"><span class="fas fa-search"></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECTION 1: HERO SLIDER -->
+  <section id="section-1">
+    <div class="content-slider">
+      <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+      <input type="radio" id="banner2" class="sec-1-input" name="banner">
+      <input type="radio" id="banner3" class="sec-1-input" name="banner">
+      <input type="radio" id="banner4" class="sec-1-input" name="banner">
+      <div class="slider">
+        <div id="top-banner-1" class="banner">
+          <div class="banner-inner-wrapper">
+            <h2>Tu Lista Inteligente</h2>
+            <h1>Bienvenido a<br>MyShopList</h1>
+            <div class="line"></div>
+            <div class="learn-more-button"><a href="#section-2">Conocer más</a></div>
+          </div>
+        </div>
+        <div id="top-banner-2" class="banner">
+          <div class="banner-inner-wrapper">
+            <h2>Acceso Seguro</h2>
+            <h1>Tu Huella,<br>Tu Acceso</h1>
+            <div class="line"></div>
+            <div class="learn-more-button"><a href="#section-5">Conocer más</a></div>
+          </div>
+        </div>
+        <div id="top-banner-3" class="banner">
+          <div class="banner-inner-wrapper">
+            <h2>Control Total</h2>
+            <h1>Rastrea tus<br>Gastos</h1>
+            <div class="line"></div>
+            <div class="learn-more-button"><a href="#section-7">Conocer más</a></div>
+          </div>
+        </div>
+        <div id="top-banner-4" class="banner">
+          <div class="banner-inner-wrapper">
+            <h2>Tu Historial</h2>
+            <h1>Compras<br>Registradas</h1>
+            <div class="line"></div>
+            <div class="learn-more-button"><a href="#main-footer">Conocer más</a></div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="controls">
+          <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span>01</span> Inicio</label>
+          <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span>02</span> Seguridad</label>
+          <label for="banner3"><span class="progressbar"><span class="progressbar-fill"></span></span><span>03</span> Control</label>
+          <label for="banner4"><span class="progressbar"><span class="progressbar-fill"></span></span><span>04</span> Historial</label>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- SECTION 2: ABOUT -->
+  <section id="section-2">
+    <div class="section-header">
+      <h3>¿Qué es MyShopList?</h3>
+      <h2>Organiza tus compras<br>de forma inteligente</h2>
+      <span class="line-red"></span>
+    </div>
+    <div class="about-wrapper">
+      <div class="about-text">
+        <p>
+          MyShopList es una app Android moderna diseñada para que nunca más olvides nada en el supermercado. Crea listas, agrega productos con precios estimados, y lleva el control de tus gastos en tiempo real. Con una interfaz amigable en español y autenticación biométrica, tu lista de compras es segura y siempre está a la mano.
+        </p>
+        <p>
+          Construida con Jetpack Compose y Material Design 3, MyShopList ofrece una experiencia fluida y moderna. Marca productos como comprados, revisa tu historial con ubicaciones registradas, y gestiona tu perfil con foto personalizada.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-item">
+          <span class="stat-icon"><i class="fas fa-list-ul"></i></span>
+          <h4>Listas ilimitadas</h4>
+          <p>Agrega todos los productos que necesites con nombre, categoría y precio.</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon"><i class="fas fa-fingerprint"></i></span>
+          <h4>Acceso biométrico</h4>
+          <p>Inicia sesión con tu huella dactilar de forma rápida y segura.</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon"><i class="fas fa-map-marker-alt"></i></span>
+          <h4>Historial con ubicación</h4>
+          <p>Registra dónde realizaste cada compra con GPS integrado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: STATS / COUNTERS -->
+  <section id="section-3">
+    <div class="stats-wrapper">
+      <div class="stat-counter">
+        <i class="fas fa-shopping-basket"></i>
+        <h2 class="counter">150+</h2>
+        <span class="line-red"></span>
+        <h4>Productos gestionados</h4>
+      </div>
+      <div class="stat-counter">
+        <i class="fas fa-users"></i>
+        <h2 class="counter">50+</h2>
+        <span class="line-red"></span>
+        <h4>Usuarios activos</h4>
+      </div>
+      <div class="stat-counter">
+        <i class="fas fa-check-circle"></i>
+        <h2 class="counter">98%</h2>
+        <span class="line-red"></span>
+        <h4>Satisfacción</h4>
+      </div>
+      <div class="stat-counter">
+        <i class="fas fa-store"></i>
+        <h2 class="counter">30+</h2>
+        <span class="line-red"></span>
+        <h4>Tiendas visitadas</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: TEAM -->
+  <section id="section-4">
+    <div class="section-header">
+      <h3>Nuestro equipo</h3>
+      <h2>Los que hicieron<br>posible esta app</h2>
+      <span class="line-red"></span>
+      <p>Desarrollado como proyecto universitario con dedicación y tecnología de punta.</p>
+    </div>
+    <div class="team-wrapper">
+      <div class="team-member">
+        <div class="member-photo member-1"></div>
+        <h4>Diego</h4>
+        <h3>Desarrollador</h3>
+        <p>Arquitectura MVVM, Room DB, navegación y lógica de negocio.</p>
+        <div class="member-social">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="member-photo member-2"></div>
+        <h4>Adrián</h4>
+        <h3>Desarrollador</h3>
+        <p>UI con Jetpack Compose, autenticación biométrica y perfil de usuario.</p>
+        <div class="member-social">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: SERVICES / FEATURES -->
+  <section id="section-5">
+    <div class="section-header">
+      <h3>Funcionalidades</h3>
+      <h2>Todo lo que necesitas<br>para comprar mejor</h2>
+      <span class="line-red"></span>
+    </div>
+    <div class="services-wrapper">
+      <div class="service-item">
+        <span class="service-icon"><i class="fas fa-plus-circle"></i></span>
+        <h4>Agregar productos fácil</h4>
+        <p>Modal animado para agregar productos con nombre, categoría y precio estimado en segundos.</p>
+      </div>
+      <div class="service-item">
+        <span class="service-icon"><i class="fas fa-dollar-sign"></i></span>
+        <h4>Total estimado</h4>
+        <p>Visualiza en tiempo real cuánto llevas gastado con una tarjeta de resumen siempre visible.</p>
+      </div>
+      <div class="service-item">
+        <span class="service-icon"><i class="fas fa-fingerprint"></i></span>
+        <h4>Huella dactilar</h4>
+        <p>Acceso rápido y seguro con autenticación biométrica en dispositivos compatibles.</p>
+      </div>
+      <div class="service-item">
+        <span class="service-icon"><i class="fas fa-history"></i></span>
+        <h4>Historial de compras</h4>
+        <p>Revisa todas tus compras anteriores con fecha y lugar donde las realizaste.</p>
+      </div>
+      <div class="service-item">
+        <span class="service-icon"><i class="fas fa-camera"></i></span>
+        <h4>Foto de perfil</h4>
+        <p>Personaliza tu perfil con una foto tomada directamente desde la cámara de tu celular.</p>
+      </div>
+      <div class="service-item">
+        <span class="service-icon"><i class="fas fa-map-marker-alt"></i></span>
+        <h4>Ubicación GPS</h4>
+        <p>Registra automáticamente dónde hiciste cada compra con el GPS de tu dispositivo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: QUOTE / HIGHLIGHT -->
+  <section id="section-6">
+    <div class="quote-wrapper">
+      <h3>"Nunca más olvides nada<br>en el supermercado"</h3>
+      <span class="line-red"></span>
+      <p>MyShopList — Tu compañero de compras inteligente</p>
+    </div>
+  </section>
+
+  <!-- SECTION 7: HOW IT WORKS -->
+  <section id="section-7">
+    <div class="section-header">
+      <h3>¿Cómo funciona?</h3>
+      <h2>Simple, rápido<br>y organizado</h2>
+      <span class="line-red"></span>
+    </div>
+    <div class="work-wrapper">
+      <div class="work-step">
+        <div class="step-number">01</div>
+        <div class="step-screen screen-login">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="screen-content login-screen">
+                <div class="avatar-circle">👤</div>
+                <h5>¡Bienvenido de nuevo!</h5>
+                <div class="input-mock"></div>
+                <div class="input-mock"></div>
+                <div class="btn-mock orange">Ingresar</div>
+                <div class="fingerprint-icon">
+                  <i class="fas fa-fingerprint"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4>Regístrate o inicia sesión</h4>
+        <p>Crea tu cuenta o accede con correo y contraseña. También puedes usar tu huella dactilar.</p>
+      </div>
+      <div class="work-step">
+        <div class="step-number">02</div>
+        <div class="step-screen screen-list">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="screen-content list-screen">
+                <div class="greeting-mock">¡Hola, Usuario! 👋</div>
+                <div class="total-card">
+                  <span>Total estimado</span>
+                  <strong>$245.00</strong>
+                </div>
+                <div class="product-card-mock">
+                  <span class="dot orange"></span>
+                  <div>
+                    <div class="product-name">Leche 🥛</div>
+                    <div class="product-price">$25.00</div>
+                  </div>
+                  <i class="fas fa-check-circle green-icon"></i>
+                </div>
+                <div class="product-card-mock">
+                  <span class="dot orange"></span>
+                  <div>
+                    <div class="product-name">Pan 🍞</div>
+                    <div class="product-price">$18.00</div>
+                  </div>
+                </div>
+                <div class="btn-mock orange small">+ Agregar cosita</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4>Crea tu lista</h4>
+        <p>Agrega productos con categoría y precio. Mira el total estimado en tiempo real.</p>
+      </div>
+      <div class="work-step">
+        <div class="step-number">03</div>
+        <div class="step-screen screen-history">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="screen-content history-screen">
+                <div class="history-header">
+                  <i class="fas fa-arrow-left"></i>
+                  <span>Historial</span>
+                  <i class="fas fa-sync"></i>
+                </div>
+                <div class="history-item-mock">
+                  <i class="fas fa-map-marker-alt orange-icon"></i>
+                  <div>
+                    <div class="h-name">Compra #1</div>
+                    <div class="h-loc">Walmart, CDMX</div>
+                  </div>
+                  <span class="h-price">$245</span>
+                </div>
+                <div class="history-item-mock">
+                  <i class="fas fa-map-marker-alt orange-icon"></i>
+                  <div>
+                    <div class="h-name">Compra #2</div>
+                    <div class="h-loc">Soriana, MTY</div>
+                  </div>
+                  <span class="h-price">$180</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4>Revisa tu historial</h4>
+        <p>Consulta tus compras pasadas con la ubicación donde las realizaste gracias al GPS.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: TESTIMONIALS -->
+  <section id="section-8">
+    <div class="section-header">
+      <h3>Lo que dicen</h3>
+      <h2>Usuarios felices</h2>
+      <span class="line-red"></span>
+    </div>
+    <div class="testimonials-wrapper">
+      <div class="testimonial">
+        <p>"MyShopList me ayuda a nunca olvidar nada. Lo mejor es ver el total estimado antes de llegar a la caja."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">M</div>
+          <div>
+            <h4>María González</h4>
+            <span>Usuario activo</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>"La autenticación con huella es increíble. Entro rápido y mi lista siempre está lista para el súper."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">C</div>
+          <div>
+            <h4>Carlos Ramírez</h4>
+            <span>Usuario activo</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>"Me encanta poder ver en el historial dónde compré y cuánto gasté. Es muy útil para organizarme."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">L</div>
+          <div>
+            <h4>Laura Martínez</h4>
+            <span>Usuario activo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: TIPS / BLOG -->
+  <section id="section-9">
+    <div class="section-header">
+      <h3>Tips de compras</h3>
+      <h2>Compra más inteligente<br>cada día</h2>
+      <span class="line-red"></span>
+    </div>
+    <div class="blog-wrapper">
+      <div class="blog-post">
+        <div class="post-image post-img-1"></div>
+        <div class="post-content">
+          <div class="post-meta"><span class="post-tag">Ahorro</span> · Abril 2025</div>
+          <h4>Planifica tu lista antes de salir</h4>
+          <p>Armar tu lista con anticipación y con precios estimados te ayuda a evitar compras impulsivas y ajustarte al presupuesto.</p>
+          <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="blog-post">
+        <div class="post-image post-img-2"></div>
+        <div class="post-content">
+          <div class="post-meta"><span class="post-tag">Organización</span> · Abril 2025</div>
+          <h4>Usa categorías para comprar más rápido</h4>
+          <p>Agrupar tus productos por categorías (Lácteos, Carnes, Frutas) te permite recorrer el supermercado de forma eficiente.</p>
+          <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="blog-post">
+        <div class="post-image post-img-3"></div>
+        <div class="post-content">
+          <div class="post-meta"><span class="post-tag">Tecnología</span> · Marzo 2025</div>
+          <h4>Revisa tu historial para comparar precios</h4>
+          <p>Con el historial de MyShopList puedes identificar en qué tiendas gastas menos y planificar mejor tu próxima compra.</p>
+          <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTACT -->
+  <footer id="main-footer">
+    <div class="footer-top">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">🛒 MyShopList</div>
+        <p>Tu aplicación Android para gestionar listas de compras de forma inteligente, segura y organizada.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#section-2">Acerca de</a></li>
+          <li><a href="#section-5">Funciones</a></li>
+          <li><a href="#section-7">Cómo funciona</a></li>
+          <li><a href="#section-9">Tips</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tecnologías</h4>
+        <ul>
+          <li><a href="#">Jetpack Compose</a></li>
+          <li><a href="#">Room Database</a></li>
+          <li><a href="#">Material Design 3</a></li>
+          <li><a href="#">Kotlin & Hilt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul class="contact-list">
+          <li><i class="fas fa-envelope"></i> myshoplist@email.com</li>
+          <li><i class="fab fa-github"></i> github.com/diedgo05</li>
+          <li><i class="fas fa-mobile-alt"></i> Android 7.0+</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MyShopList. Proyecto universitario · Hecho con ❤️ en México</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
